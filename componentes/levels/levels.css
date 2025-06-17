@@ -1,0 +1,23 @@
+.niveles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 30px;
+    background: var(--dark-2);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius);
+    max-width: 640px;
+    margin: 40px auto;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+  }
+  
+  .niveles-container select {
+    min-width: 240px;
+    padding: 12px;
+    font-size: 16px;
+    background: var(--dark);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius);
+    color: #fff;
+  }

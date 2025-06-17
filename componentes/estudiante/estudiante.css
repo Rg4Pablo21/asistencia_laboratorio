@@ -1,0 +1,281 @@
+.asistencia-container {
+    max-width: 1024px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    color: #fff;
+    border: 2px solid #00c3ff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, .08);
+  }
+  
+  .asistencia-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* ---------- TABLA ---------- */
+  .tabla-estudiantes {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabla-estudiantes th,
+  .tabla-estudiantes td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+    background: #2a2a2a;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 8px;
+    background: #2a2a2a;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 6px;
+  }
+  
+  /* ---------- BOTONES EN CELDA ---------- */
+  .asistencia-botones {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+  }
+  
+  .btn-check,
+  .btn-x,
+  .btn-uniforme {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+    transition: background .2s;
+  }
+  
+  .btn-check:hover {
+    background: #2ecc71;
+  }
+  
+  .btn-x:hover {
+    background: #e74c3c;
+  }
+  
+  .btn-uniforme:hover {
+    background: #3498db;
+  }
+  
+  .btn-check.activo {
+    background: #28a745;
+  }
+  
+  .btn-x.activo {
+    background: #dc3545;
+  }
+  
+  /* ---------- BOTONES INFERIORES ---------- */
+  .botones-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .btn-todos,
+  .btn-guardar,
+  .btn-agregar {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background .2s;
+    color: #fff;
+  }
+  
+  .btn-todos {
+    background: #2ecc71;
+  }
+  
+  .btn-todos:hover {
+    background: #28a745;
+  }
+  
+  .btn-guardar {
+    background: #00c3ff;
+  }
+  
+  .btn-guardar:hover {
+    background: #009fcc;
+  }
+  
+  .btn-agregar {
+    background: #f39c12;
+  }
+  
+  .btn-agregar:hover {
+    background: #e67e22;
+  }
+  
+  /* ---------- VISTA UNIFORME ---------- */
+  .uniforme-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    color: #fff;
+    border: 2px solid #00c3ff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, .1);
+    text-align: center;
+  }
+  
+  .uniforme-container h3 {
+    margin-bottom: 20px;
+  }
+  
+  .uniforme-opciones {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .uniforme-item {
+    border: 2px solid #444;
+    padding: 10px;
+    border-radius: 10px;
+    transition: border .2s;
+  }
+  
+  .uniforme-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .uniforme-item p {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  
+  .uniforme-container textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background: #2a2a2a;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .uniforme-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #00c3ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 15px;
+  }
+  
+  .uniforme-container button:hover {
+    background: #009fcc;
+  }
+  
+  
+  
+  /* ---------- BOTÓN CORREO (📧) ---------- */
+  .btn-correo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  .btn-correo:hover {
+    background: #f39c12;
+    transform: scale(1.1);
+  }
+  
+  /* ---------- VISTA DE MOTIVO (correo) ---------- */
+  .motivo-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    color: #fff;
+    border: 2px solid #00c3ff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+    text-align: center;
+  }
+  
+  .motivo-container h3 {
+    margin-bottom: 20px;
+  }
+  
+  .motivo-container textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    background: #2a2a2a;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .motivo-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #00c3ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  
+  .motivo-container button:hover {
+    background: #009fcc;
+  }
+  
+  /* ---------- BOTÓN ELIMINAR ---------- */
+  .btn-eliminar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.2s;
+  }
+  
+  .btn-eliminar:hover {
+    background: #e74c3c;
+    transform: scale(1.1);
+  }
+  
+  .tabla-estudiantes td:nth-child(4) {
+    width: 60px;
+    text-align: center;
+  }
